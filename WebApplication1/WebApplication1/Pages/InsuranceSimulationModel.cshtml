@@ -1,0 +1,65 @@
+﻿@page
+@model WebApplication1.Pages.InsuranceSimulationModel
+@{
+    ViewData["Title"] = "Symulacja Ubezpieczeniowa";
+}
+
+<h1>Symulacja Kapitału Firmy Ubezpieczeniowej</h1>
+
+<h2>Teoria</h2>
+<p>
+    Metoda zdarzeń dyskretnych pozwala modelować procesy losowe, takie jak roszczenia ubezpieczeniowe.
+    Roszczenia klientów firmy ubezpieczeniowej podlegają **procesowi Poissona** o intensywności 10 zgłoszeń na dzień,
+    a ich kwoty są losowe zgodnie z **rozkładem wykładniczym** ze średnią 1000 $.
+</p>
+<p>
+    Kapitał firmy zmienia się codziennie w zależności od:
+    <ul>
+        <li>Otrzymywanych składek ubezpieczeniowych (stałe wpływy 11 000 $ dziennie)</li>
+        <li>Wypłacanych roszczeń (losowe wartości)</li>
+    </ul>
+    Symulujemy proces i sprawdzamy, czy kapitał pozostanie dodatni przez cały okres 365 dni.
+</p>
+
+<h2>Treść Zadania</h2>
+<p>
+    Rozważamy firmę ubezpieczeniową, która zaczyna z kapitałem **25 000 $** i otrzymuje płatności w wysokości **11 000 $ dziennie**.
+    Każdego dnia klienci zgłaszają roszczenia zgodnie z procesem Poissona (średnio 10 zgłoszeń dziennie),
+    a wysokość pojedynczego roszczenia jest losowa i ma rozkład wykładniczy o średniej 1000 $.
+</p>
+<p>Naszym celem jest oszacowanie prawdopodobieństwa, że kapitał firmy pozostanie dodatni przez 365 dni.</p>
+
+<h2>Kroki Rozwiązania</h2>
+<ol>
+    <li>Inicjalizujemy kapitał początkowy na 25 000 $.</li>
+    <li>Przez 365 dni symulujemy liczbę roszczeń przy użyciu rozkładu Poissona.</li>
+    <li>Dla każdej zgłoszonej szkody losujemy jej wysokość z rozkładu wykładniczego.</li>
+    <li>Odejmujemy sumę roszczeń od kapitału, dodając dzienne wpływy (11 000 $).</li>
+    <li>Sprawdzamy, czy kapitał kiedykolwiek spadł poniżej 0.</li>
+    <li>Powtarzamy symulację wielokrotnie (np. 10 000 razy) i liczymy, w ilu przypadkach kapitał był zawsze dodatni.</li>
+</ol>
+
+<h2>Wprowadź Parametry Symulacji</h2>
+<form method="post">
+    <label for="InitialCapital">Kapitał początkowy ($):</label>
+    <input type="number" asp-for="InitialCapital" class="form-control" />
+
+    <label for="ClaimRate">Średnia liczba roszczeń dziennie:</label>
+    <input type="number" asp-for="ClaimRate" class="form-control" />
+
+    <label for="AvgClaim">Średnia wartość roszczenia ($):</label>
+    <input type="number" asp-for="AvgClaim" class="form-control" />
+
+    <label for="DailyIncome">Stała dzienna wpłata ($):</label>
+    <input type="number" asp-for="DailyIncome" class="form-control" />
+
+    <button type="submit" class="btn btn-primary mt-3">Symuluj</button>
+</form>
+
+@if (Model.Result != null)
+{
+    <h2 class="mt-4">Wyniki Symulacji</h2>
+    <ul>
+        <li><strong>Prawdopodobieństwo, że kapitał pozostanie dodatni:</strong> @Model.Result</li>
+    </ul>
+}

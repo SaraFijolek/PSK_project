@@ -1,0 +1,43 @@
+﻿@page
+@model WebApplication1.Pages.BinaryDistributionServiceModel
+@{
+    ViewData["Title"] = "Rozkład Dwupunktowy";
+}
+
+<h1>Analiza statystyczna – Rozkład Dwupunktowy</h1>
+
+<h2>Teoria</h2>
+<p>
+    Rozkład dwupunktowy (Bernoulliego) to dyskretny rozkład prawdopodobieństwa, który przyjmuje tylko dwie wartości:
+    <strong>0</strong> i <strong>1</strong>. Parametr <code>p</code> określa prawdopodobieństwo uzyskania wartości <code>1</code>.
+</p>
+<p>
+    Dla wartości <code>p = 0.3</code> mamy:
+    <ul>
+        <li>P(1) = 0.3 → 30% szans na wystąpienie "1"</li>
+        <li>P(0) = 0.7 → 70% szans na wystąpienie "0"</li>
+    </ul>
+</p>
+
+<h2>Treść zadania</h2>
+<p>Generujemy serię 5 powtórzeń rozkładu dwupunktowego z parametrem <code>p = 0.3</code>.</p>
+
+<h2>Kroki rozwiązania</h2>
+<ol>
+    <li>Określamy liczbę powtórzeń (domyślnie 5).</li>
+    <li>Losujemy wartości {0,1} na podstawie parametru <code>p = 0.3</code>.</li>
+    <li>Wyświetlamy wynik.</li>
+</ol>
+
+<h2>Generowanie serii</h2>
+<form method="post">
+    <label for="length">Liczba powtórzeń:</label>
+    <input type="number" id="length" asp-for="Length" min="1" class="form-control" />
+    <button type="submit" class="btn btn-primary mt-2">Generuj</button>
+</form>
+
+@if (Model.GeneratedSeries != null)
+{
+    <h2>Wyniki</h2>
+    <p class="alert alert-info">Wygenerowana seria: <strong>@string.Join(", ", Model.GeneratedSeries)</strong></p>
+}

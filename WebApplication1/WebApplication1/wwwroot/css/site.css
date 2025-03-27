@@ -1,0 +1,66 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #444;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+
+matrix {
+    background: #fff;
+    padding: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 1.2em;
+    white-space: pre;
+    text-align: left;
+}
+
+
+matrix-table {
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+    matrix-table td {
+        padding: 8px;
+        border: 1px solid black;
+        text-align: center;
+        background: white;
+        font-size: 1.2em;
+    }

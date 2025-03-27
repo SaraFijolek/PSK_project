@@ -1,0 +1,67 @@
+﻿@page
+@model WebApplication1.Pages.Index1Model
+@{
+    ViewData["Title"] = "Analiza statystyczna";
+}
+
+<h1>Analiza statystyczna wektora losowego (X, Y)</h1>
+
+<h2>Teoria</h2>
+<p>
+    Kowariancja mierzy, jak dwie zmienne losowe zmieniają się razem. Korelacja określa stopień ich liniowej zależności.
+</p>
+<p>
+    Dwie zmienne są **stochastycznie niezależne**, jeśli spełniają warunek P(X, Y) = P(X) * P(Y).
+    Są **liniowo zależne**, gdy ich współczynnik korelacji wynosi dokładnie 1 lub -1.
+</p>
+<h2> Treść Zadania</h2>
+<p>Dana jest macierz P reprezentująca rozkład łączny wektora losowego (X, Y):</p>
+<h2>Macierz </h2>
+<div class="matrix">
+    P =
+    [
+    0.1  0.2  0.3
+    0.1  0.1  0.2
+    ]
+</div>
+<p>oraz:</p>
+<ul>
+    <li>X(Ω) = {1, 2}</li>
+    <li>Y(Ω) = {3, 2, 1}</li>
+</ul>
+<p>Obliczamy:</p>
+<ul>
+    <li><strong>(a)</strong> Kowariancję <code>cov(X, Y)</code></li>
+    <li><strong>(b)</strong> Korelację <code>ρ(X, Y)</code></li>
+    <li><strong>(c)</strong> Czy zmienne są niezależne</li>
+    <li><strong>(d)</strong> Czy zmienne są liniowo zależne</li>
+</ul>
+
+<h2> Kroki Rozwiązania</h2>
+<ol>
+    <li>Obliczamy wartości oczekiwane <code>E(X)</code> i <code>E(Y)</code></li>
+    <li>
+        Obliczamy kowariancję przy użyciu wzoru:
+        <pre>cov(X, Y) = Σ (xi - E(X))(yj - E(Y))P(xi, yj)</pre>
+    </li>
+    <li>
+        Obliczamy korelację:
+        <pre>ρ(X, Y) = cov(X, Y) / (σX * σY)</pre>
+    </li>
+    <li>
+        Sprawdzamy niezależność:
+        <pre>P(X, Y) = P(X) * P(Y) → jeśli tak, to niezależne</pre>
+    </li>
+    <li>
+        Sprawdzamy liniową zależność:
+        <pre>Jeśli ρ(X, Y) = ±1, to X i Y są liniowo zależne</pre>
+    </li>
+</ol>
+
+<h2>Wyniki obliczeń</h2>
+<ul>
+    <li><strong>Kowariancja (Cov(X, Y)):</strong> @Model.CovarianceResult</li>
+    <li><strong>Korelacja (ρ(X,Y)):</strong> @Model.CorrelationResult</li>
+    <li><strong>Czy zmienne są niezależne?</strong> @(Model.IsIndependent ? "Tak" : "Nie")</li>
+    <li><strong>Czy zmienne są liniowo zależne?</strong> @(Model.IsLinearlyDependent ? "Tak" : "Nie")</li>
+</ul>
