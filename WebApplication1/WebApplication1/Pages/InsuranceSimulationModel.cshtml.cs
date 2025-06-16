@@ -31,12 +31,12 @@ namespace WebApplication1.Pages
         [BindProperty]
         public int NumSimulations { get; set; } = 10000;
 
-        public string Result { get; set; }
+        public string Result { get; set; } = "";
 
         public void OnPost()
         {
-            double probability = _simulationService.RunMultipleSimulations(NumSimulations, Days, InitialCapital, ClaimRate, AvgClaim, DailyIncome);
-            Result = $"Prawdopodobieñstwo, ¿e kapita³ pozostanie dodatni przez {Days} dni: {probability * 100:F2}%";
+            var probability = _simulationService.RunMultipleSimulations(NumSimulations, Days, InitialCapital, ClaimRate, AvgClaim, DailyIncome);
+            Result = $"Prawdopodobieñstwo, ¿e kapita³ pozostanie dodatni przez {Days} dni wynosi: {probability:P2}";
         }
     }
 }

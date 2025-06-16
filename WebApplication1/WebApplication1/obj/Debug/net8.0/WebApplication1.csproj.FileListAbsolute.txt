@@ -20,15 +20,11 @@ C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebA
 C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.build.WebApplication1.props
-C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WebApplication1.props
-C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebApplication1.props
-C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.dll
 C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\refint\WebApplication1.dll
 C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json
+C:\Users\saras\OneDrive\Dokumenty\programowanie-projekty\C#\WebApplication1\WebApplication1\obj\Debug\net8.0\staticwebassets.build.json.cache

@@ -4,7 +4,7 @@ namespace WebApplication1.Pages.Models
 {
     public class InsuranceSimulationService
     {
-        private static readonly Random _random = new Random();
+        private static readonly Random _random = new();
 
         public double RunMultipleSimulations(int numSimulations, int days, double initialCapital, double claimRate, double avgClaim, double dailyIncome)
         {
@@ -13,54 +13,49 @@ namespace WebApplication1.Pages.Models
             for (int i = 0; i < numSimulations; i++)
             {
                 if (RunSingleSimulation(days, initialCapital, claimRate, avgClaim, dailyIncome))
-                {
                     successfulSimulations++;
-                }
             }
 
             return (double)successfulSimulations / numSimulations;
         }
 
-        private bool RunSingleSimulation(int days, double initialCapital, double claimRate, double avgClaim, double dailyIncome)
+        private bool RunSingleSimulation(int days, double capital, double claimRate, double avgClaim, double dailyIncome)
         {
-            double capital = initialCapital;
-
             for (int day = 0; day < days; day++)
             {
-                int claims = PoissonProcess(claimRate);
+                int claims = SamplePoisson(claimRate);
                 double totalClaims = 0;
 
                 for (int i = 0; i < claims; i++)
-                {
-                    totalClaims += ExponentialDistribution(avgClaim);
-                }
+                    totalClaims += SampleExponential(avgClaim);
 
                 capital += dailyIncome - totalClaims;
 
-                if (capital < 0) return false;
+                if (capital < 0)
+                    return false;
             }
-
             return true;
         }
 
-        private int PoissonProcess(double rate)
+        private int SamplePoisson(double lambda)
         {
-            double L = Math.Exp(-rate);
-            int k = 0;
+            double L = Math.Exp(-lambda);
             double p = 1.0;
+            int k = 0;
 
-            do
+            while (p > L)
             {
                 k++;
                 p *= _random.NextDouble();
-            } while (p > L);
+            }
 
             return k - 1;
         }
 
-        private double ExponentialDistribution(double mean)
+        private double SampleExponential(double mean)
         {
-            return -mean * Math.Log(1 - _random.NextDouble());
+            double u = _random.NextDouble();
+            return -mean * Math.Log(1 - u);
         }
     }
 }

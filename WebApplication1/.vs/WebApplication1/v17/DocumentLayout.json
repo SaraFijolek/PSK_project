@@ -9,14 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{54064DAD-1666-4A7A-B447-51C6D148AA80}|WebApplication1\\WebApplication1.csproj|c:\\users\\saras\\onedrive\\dokumenty\\programowanie-projekty\\c#\\webapplication1\\webapplication1\\pages\\models\\insurancesimulationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54064DAD-1666-4A7A-B447-51C6D148AA80}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\models\\insurancesimulationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54064DAD-1666-4A7A-B447-51C6D148AA80}|WebApplication1\\WebApplication1.csproj|c:\\users\\saras\\onedrive\\dokumenty\\programowanie-projekty\\c#\\webapplication1\\webapplication1\\pages\\binarydistributionservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{54064DAD-1666-4A7A-B447-51C6D148AA80}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\binarydistributionservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54064DAD-1666-4A7A-B447-51C6D148AA80}|WebApplication1\\WebApplication1.csproj|c:\\users\\saras\\onedrive\\dokumenty\\programowanie-projekty\\c#\\webapplication1\\webapplication1\\pages\\binarydistributionservice.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54064DAD-1666-4A7A-B447-51C6D148AA80}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\binarydistributionservice.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,47 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "InsuranceSimulationModel.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\saras\\OneDrive\\Dokumenty\\programowanie-projekty\\C#\\WebApplication1\\WebApplication1\\Pages\\InsuranceSimulationModel.cshtml.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Pages\\InsuranceSimulationModel.cshtml.cs",
-              "ToolTip": "C:\\Users\\saras\\OneDrive\\Dokumenty\\programowanie-projekty\\C#\\WebApplication1\\WebApplication1\\Pages\\InsuranceSimulationModel.cshtml.cs",
-              "RelativeToolTip": "WebApplication1\\Pages\\InsuranceSimulationModel.cshtml.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T17:01:17.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BinaryDistributionService.cshtml",
-              "DocumentMoniker": "C:\\Users\\saras\\OneDrive\\Dokumenty\\programowanie-projekty\\C#\\WebApplication1\\WebApplication1\\Pages\\BinaryDistributionService.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Pages\\BinaryDistributionService.cshtml",
-              "ToolTip": "C:\\Users\\saras\\OneDrive\\Dokumenty\\programowanie-projekty\\C#\\WebApplication1\\WebApplication1\\Pages\\BinaryDistributionService.cshtml",
-              "RelativeToolTip": "WebApplication1\\Pages\\BinaryDistributionService.cshtml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-03T16:56:32.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BinaryDistributionService.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\saras\\OneDrive\\Dokumenty\\programowanie-projekty\\C#\\WebApplication1\\WebApplication1\\Pages\\BinaryDistributionService.cshtml.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Pages\\BinaryDistributionService.cshtml.cs",
-              "ToolTip": "C:\\Users\\saras\\OneDrive\\Dokumenty\\programowanie-projekty\\C#\\WebApplication1\\WebApplication1\\Pages\\BinaryDistributionService.cshtml.cs",
-              "RelativeToolTip": "WebApplication1\\Pages\\BinaryDistributionService.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T16:56:19.376Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -75,9 +28,22 @@
               "RelativeDocumentMoniker": "WebApplication1\\Pages\\Models\\InsuranceSimulationService.cs",
               "ToolTip": "C:\\Users\\saras\\OneDrive\\Dokumenty\\programowanie-projekty\\C#\\WebApplication1\\WebApplication1\\Pages\\Models\\InsuranceSimulationService.cs",
               "RelativeToolTip": "WebApplication1\\Pages\\Models\\InsuranceSimulationService.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowEEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T16:53:19.978Z",
+              "WhenOpened": "2025-06-04T21:56:17.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InsuranceSimulationModel.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\saras\\OneDrive\\Dokumenty\\programowanie-projekty\\C#\\WebApplication1\\WebApplication1\\Pages\\InsuranceSimulationModel.cshtml.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\InsuranceSimulationModel.cshtml.cs",
+              "ToolTip": "C:\\Users\\saras\\OneDrive\\Dokumenty\\programowanie-projekty\\C#\\WebApplication1\\WebApplication1\\Pages\\InsuranceSimulationModel.cshtml.cs",
+              "RelativeToolTip": "WebApplication1\\Pages\\InsuranceSimulationModel.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T21:56:05.231Z",
               "EditorCaption": ""
             }
           ]
